@@ -3,7 +3,7 @@ def solution(new_id):
     step2, step3_4, step4, step5, step6, answer = '', '', '', '', '', ''
     count = 0
 
-    for i in step1: # 2단계: 특수문자가 아니고, -,_,. 아닐때
+    for i in step1: # 2단계: 특수문자가 아니고, -,_,. 일때
         if i.isalnum() == True or i == '-' or i == '_' or i == '.':
             step2 += i
 
