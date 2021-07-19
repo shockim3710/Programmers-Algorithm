@@ -22,7 +22,6 @@ def solution(lottos, win_nums):
         else:
             answer.append(6 - (countWin + count0) + 1)
 
-
     # 당첨된 번호가 없으면 최저순위 6등으로 저장
     if countWin == 0:
         answer.append(6)
@@ -31,6 +30,3 @@ def solution(lottos, win_nums):
         answer.append(6 - countWin + 1)
 
     return answer
-
-
-print(solution([1, 2, 3, 4, 0, 0], [38, 19, 20, 40, 15, 25]))
